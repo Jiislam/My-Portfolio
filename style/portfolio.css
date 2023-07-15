@@ -21,7 +21,7 @@ body {
 }
 
 .nav-title {
-    Copy color: #181818;
+    background-color: #181818;
 
     font-size: 45px;
 
@@ -80,8 +80,8 @@ nav a {
 
 }
 
-.banner .profice-picture {
-    padding-bottom: ;
+.banner .profile-picture {
+    
     width: 500px;
 }
 
@@ -130,7 +130,14 @@ margin: 0px auto;
     background: #FFF8F3;
     padding: 130px;
     margin: 130px;
+    background-image: url(../images/IMG_20221206_231948.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
 }
+
+
 .section-description{
     color: #757575;
 text-align: center;
@@ -153,6 +160,7 @@ a:hover{
     transition: .5s;
 }
 
+
 /* skills style */
 #what-i-do{
     padding: 30px 150px; 
@@ -163,7 +171,7 @@ a:hover{
     gap: 24px;
 }
 .skill{padding: 30px;
-
+text-align: center;
 
 border-radius: 5px;
 border-radius: 5px;
@@ -209,7 +217,7 @@ footer {
 }
 
 .footer-column {
-    width: 50%;
+    width: 100%;
 }
 
 .social-links a{
@@ -226,4 +234,95 @@ textarea {
     background: #FFF;
     border: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+
+    ul{
+        display: grid;
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        
+        
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner, .banner-title{
+     
+        background-color: #ddd1d1a7;
+        text-align: center;
+            padding: 30px 15px 0px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+
+    .profile-picture{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+
+    }
+    .about{
+        display: none;
+        align-items: start;
+        width:30%;   }
+
+        .skill-container{
+           flex-direction: column;
+           padding: 0px 25px;
+           width: 90%;
+        }
+        section{
+           
+            padding: 20px 8px;
+            flex-direction: column;
+            display: flex;
+        }
+        
+        .footer-container{
+            display: flex;
+        justify-content: center;
+            padding: 0px 10px;
+            width:100%;
+           flex-direction: column;
+          
+          
+          
+         }
+         footer {
+            display: flex;
+            gap: 100px;
+            background: #FFF8F3;
+            margin-top: 100px;
+            padding: 13px 20px;
+            text-align: center;
+        }
+         .footer-column{
+           width: 100%;
+            
+         }
+         #what-i-do{
+            text-align: center;
+         }
+         .contact input[type="text"], .contact input[type="email"],
+         textarea {
+             display: block;
+             margin-bottom: 25px;
+             padding: 18px 3px;
+             color: #757575;
+             border-radius: 5px;
+             background: #16151549;
+             border: 0;
+             width: 100%;
+         }
 }
