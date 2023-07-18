@@ -282,16 +282,30 @@ textarea {
 
     }
     .about{
-        display: none;
-        align-items: start;
-        width:30%;   }
+       
+        align-items: center;
+        width:100%;
+        padding:15px 2px;
+        margin: 10px 2px;
+        height: 350px;
+        
+         }
+.section-description{
+    backdrop-filter: blur(6px);
+    background-color: #181818af;
+    color: #ffffffc5;
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
 
+    ;
+}
         .skill-container{
            flex-direction: column;
            padding: 0px 25px;
            width: 90%;
         }
-        section{
+        .section{
            
             padding: 20px 8px;
             flex-direction: column;
@@ -342,6 +356,7 @@ textarea {
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            
         }
         nav>ul {
             display: flex;
@@ -361,5 +376,11 @@ textarea {
         .header {
             background-image: none;
         }
-        
+        .about-info-container{
+            margin: 50px 5px;
+        }
+        #what-i-do{
+            display: none;
+
+        }
 }
